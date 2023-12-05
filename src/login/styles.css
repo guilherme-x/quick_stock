@@ -1,0 +1,32 @@
+
+  .contaner {
+    background-color: rgb(50, 115, 97) ;
+    width: 400px;
+    border: none;
+    
+  }  
+  .texto{
+    background-color:rgb(50, 115, 97) ;
+    border: none;
+  }
+  .email{
+    color: rgb(3, 18, 18);
+    background-color:white;
+    margin-bottom: 20px;
+    font-size: 15px ;
+    border-bottom: 2px solid  #adadad;
+}
+.pin{
+    color: rgb(3, 18, 18);
+    background-color: white;
+    margin-bottom: 20px;
+    font-size: 15px ;
+    border-bottom: 2px solid #adadad;
+}
+
+.btn-login{
+    background-color: transparent;
+    color: var(--white);
+    margin: 20px;
+}
+

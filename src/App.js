@@ -1,9 +1,10 @@
 import './App.css';
+import Login from './login';
 
 function App() {
   return (
     <div className="App">
-      {/* ADICIONE OS COMPONENTES QUE VOCÊS CRIAREM AQUI */}
+      <Login/>
     </div>
   );
 }
