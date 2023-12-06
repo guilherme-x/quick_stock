@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.c48c839c.css",
-    "main.js": "/static/js/main.962bf3e9.js",
-    "static/media/logo.png": "/static/media/logo.54d3c2760f3fe988ddab.png",
-    "index.html": "/index.html",
-    "main.c48c839c.css.map": "/static/css/main.c48c839c.css.map",
-    "main.962bf3e9.js.map": "/static/js/main.962bf3e9.js.map"
+    "main.css": "/guixavier.com.br/quick_stock/static/css/main.c48c839c.css",
+    "main.js": "/guixavier.com.br/quick_stock/static/js/main.5413962d.js",
+    "static/media/logo.png": "/guixavier.com.br/quick_stock/static/media/logo.54d3c2760f3fe988ddab.png",
+    "index.html": "/guixavier.com.br/quick_stock/index.html",
+    "main.c48c839c.css.map": "/guixavier.com.br/quick_stock/static/css/main.c48c839c.css.map",
+    "main.5413962d.js.map": "/guixavier.com.br/quick_stock/static/js/main.5413962d.js.map"
   },
   "entrypoints": [
     "static/css/main.c48c839c.css",
-    "static/js/main.962bf3e9.js"
+    "static/js/main.5413962d.js"
   ]
 }
