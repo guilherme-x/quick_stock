@@ -5,6 +5,7 @@ import RegisterRoutes from './cadastros';
 import Login from './login';
 import ProductRoutes from './products';
 function App() {
+  const hasToken = () => !!sessionStorage.getItem('apiToken');
   return (
     <div className='App'>
       <ConfigProvider theme={{
@@ -16,11 +17,17 @@ function App() {
         },
         "algorithm": theme.darkAlgorithm,
       }}>
-        <BrowserRouter basename='/quick_stock/*'>
+        <BrowserRouter basename='/quick_stock'>
           <Routes >
             <Route index element={<Login />} />
-            <Route path="/products" element={<ProductRoutes />} />
-            <Route path="/cadastros/*" element={<RegisterRoutes />} />
+            {
+              hasToken() ?
+                <>
+                  <Route path="/products/*" element={<ProductRoutes />} />
+                  <Route path="/cadastros/*" element={<RegisterRoutes />} />
+                </>
+                : <Route path="*" element={<Login />} />
+            }
           </Routes>
         </BrowserRouter>
       </ConfigProvider>
