@@ -1,70 +1,50 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Quick Stock
 
-## Available Scripts
+Quick Stock é uma aplicação web em React que gerencia produtos em estoque de forma rápida e eficiente. Com o Quick Stock, você pode cadastrar, editar, excluir e consultar os produtos do seu estoque, além de visualizar gráficos e relatórios sobre as entradas e saídas dos produtos.
 
-In the project directory, you can run:
+## Autores
 
-### `npm start`
+Este projeto foi desenvolvido por:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Guilherme
+- Kananda
+- Aline
+- Millena
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tecnologia
 
-### `npm test`
+Este projeto foi construído com:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React
+- Ant Design
 
-### `npm run build`
+## Link
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Você pode acessar a aplicação no seguinte link: [guixavier.com.br/quick_stock]
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Instalação
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Para instalar o projeto localmente, você precisa ter o Node.js e o npm instalados no seu computador. Depois, siga estes passos:
 
-### `npm run eject`
+- Clone o repositório com o comando: `git clone https://github.com/guixavier/quick-stock.git`
+- Entre na pasta do projeto com o comando: `cd quick-stock`
+- Instale as dependências com o comando: `npm install`
+- Inicie o servidor de desenvolvimento com o comando: `npm start`
+- Abra o navegador e acesse o endereço: `http://localhost:3000`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Uso
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Para usar a aplicação, você precisa se cadastrar ou fazer login com uma conta válida. Você pode usar as seguintes credenciais para teste:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Email: teste.teste@teste.com
+- Senha: 12345678
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Depois, você pode navegar pelas páginas do menu lateral e interagir com os recursos da aplicação. Você pode:
 
-## Learn More
+- Cadastrar um novo produto com o botão "Novo produto"
+- Editar ou excluir um produto existente com os botões "Editar" e "Excluir"
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Licença
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE] para mais detalhes.
