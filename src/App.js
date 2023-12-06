@@ -1,18 +1,29 @@
+import { ConfigProvider, theme } from 'antd';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import RegisterRoutes from './cadastros';
 import Login from './login';
-import Cadastro from './products/cadastro';
 import ProductRoutes from './products';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
 function App() {
   return (
     <div className='App'>
-      <BrowserRouter >
-        <Routes>
-          <Route index element={<Login />} />
-          <Route path="products/*" element={<ProductRoutes />} />
-        </Routes>
-      </BrowserRouter>
+      <ConfigProvider theme={{
+        "token": {
+          "colorPrimary": "#0d1532",
+          "colorInfo": "#0d1532",
+          "colorSuccess": "#27d8a1",
+          "wireframe": false
+        },
+        "algorithm": theme.darkAlgorithm,
+      }}>
+        <BrowserRouter>
+          <Routes>
+            <Route index element={<Login />} />
+            <Route path="/products" element={<ProductRoutes />} />
+            <Route path="/cadastros/*" element={<RegisterRoutes />} />
+          </Routes>
+        </BrowserRouter>
+      </ConfigProvider>
     </div>
   );
 }

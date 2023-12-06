@@ -1,13 +1,14 @@
 import { Routes, Route } from 'react-router-dom';
 import ProductList from './lista';
-import Cadastro from './cadastro';
+import Layout from '../Layout';
 
 const ProductRoutes = () => {
     return (
-        <Routes>
-            <Route path="/" element={<ProductList />} />
-            <Route path="cadastro" element={<Cadastro />} />
-        </Routes>
+        <Layout>
+            <Routes>
+                <Route path="/" element={<ProductList />} />
+            </Routes>
+        </Layout>
     )
 }
 export default ProductRoutes;

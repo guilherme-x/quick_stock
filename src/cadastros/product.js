@@ -1,6 +1,6 @@
 import { Form, Input, Button } from "antd"
 import "./style.css"
-const Cadastro = () => {
+const Product = () => {
     return (
         <Form className="Form">
             <Form.Item>
@@ -33,4 +33,4 @@ const Cadastro = () => {
         </Form>
     )
 }
-export default Cadastro
+export default Product
