@@ -1,0 +1,31 @@
+.Form {
+    max-width: 400px;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+
+}
+
+.Form .ant-form-item {
+    margin-bottom: 15px;
+}
+
+
+.Form .ant-input {
+    width: 100%;
+}
+
+.Form .ant-btn {
+    width: 100%;
+}
+
+.Form .ant-input::placeholder {
+    color: #999;
+}
+
+.Form .ant-btn::placeholder {
+    color: #fff;
+}

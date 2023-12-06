@@ -1,32 +1,47 @@
-
-  .contaner {
-    background-color: white ;
-    width: 400px;
-    border: none;
-    
-  }  
-  .texto{
-    background-color:rgb white ;
-    border: none;
-  }
-  .email{
-    color: rgb(3, 18, 18);
-    background-color:white;
-    margin-bottom: 20px;
-    font-size: 15px ;
-    border-bottom: 2px solid  #adadad;
-}
-.pin{
-    color: rgb(3, 18, 18);
-    background-color: white;
-    margin-bottom: 20px;
-    font-size: 15px ;
-    border-bottom: 2px solid #adadad;
+:root {
+  --primary: #3d5981;
+  --text: #ffffff;
+  --invert-text: #000000;
 }
 
-.btn-login{
-    background-color: transparent;
-    color: var(--white);
-    margin: 20px;
+.backdrop {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  display: flex;
+  background-image: linear-gradient(#3d5981, #000);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
+.container-login {
+  min-width: 350px;
+  min-height: 450px;
+  border-radius: 5px !important;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.icon {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-self: center;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 135px;
+  min-width: 250px;
+}
+
+
+.btn-submit {
+  margin-bottom: 50px !important;
+  width: 240px;
+}
