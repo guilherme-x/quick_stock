@@ -5,7 +5,10 @@ import axios from "axios"
 const Product = () => {
     const { id } = useParams()
     const getProduct = async () => {
-        if (!id) return
+        if (!id) {
+            setFormValues(productTemplate)
+            return
+        }
         const { data: resProduct } = await axios.get(`https://fakestoreapi.com/products/${id}`)
         setFormValues({
             title: resProduct.title,
@@ -37,7 +40,7 @@ const Product = () => {
 
     return (
         <Form className="Form" onSubmit={handleSubmit}>
-            <img width={150} style={{borderRadius: 10}} src={formValues.image} alt="product" />
+            {formValues.image && <img width={150} style={{ borderRadius: 10 }} src={formValues.image} alt="product" />}
             {Object.keys(formValues).map((field) => (
                 <Form.Item key={field}>
                     <Input

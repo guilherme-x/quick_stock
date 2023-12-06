@@ -2,9 +2,11 @@ import React, { useEffect, useState } from 'react';
 import { Card, Button } from 'antd';
 import { EditOutlined, DeleteOutlined } from '@ant-design/icons';
 import './style.css';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 function ProductList() {
+    const navigate = useNavigate();
     const [products, setProducts] = useState([]);
 
     const getProducts = async () => {
@@ -29,7 +31,7 @@ function ProductList() {
                 {products.map((product, index) => (
                     <Card className='product-card' key={index} title={product.title}>
                         <div className='image'>
-                            <img alt='product' src={product.image} />
+                            {!!product.image && <img alt='product' src={product.image} />}
                         </div>
                         <div className='info'>
                             <p><b>Categoria: </b>{product.category}</p>
@@ -37,7 +39,7 @@ function ProductList() {
                             <p><b>Descrição:</b> {product.description}</p>
                         </div>
                         <div className='actions'>
-                            <Button type='primary' icon={<EditOutlined />} style={{ marginBottom: 8 }}>
+                            <Button onClick={() => navigate(`/cadastros/product/${product.id}`)} type='primary' icon={<EditOutlined />} style={{ marginBottom: 8 }}>
                                 Editar
                             </Button>
                             <Button danger icon={<DeleteOutlined />} onClick={() => handleDelete(index)}>

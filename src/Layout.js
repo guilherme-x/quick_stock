@@ -31,11 +31,6 @@ const getItems = (isExpanded) => [
         },
     },
     {
-        label: "Dashboard",
-        key: "products",
-        icon: <PieChartOutlined />,
-    },
-    {
         label: "Produtos",
         key: "products",
         icon: <ShoppingOutlined />,
