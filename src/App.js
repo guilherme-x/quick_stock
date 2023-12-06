@@ -16,8 +16,8 @@ function App() {
         },
         "algorithm": theme.darkAlgorithm,
       }}>
-        <BrowserRouter>
-          <Routes>
+        <BrowserRouter basename='/quick_stock'>
+          <Routes >
             <Route index element={<Login />} />
             <Route path="/products" element={<ProductRoutes />} />
             <Route path="/cadastros/*" element={<RegisterRoutes />} />
